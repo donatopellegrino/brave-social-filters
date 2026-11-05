@@ -1,2 +1,0 @@
-! X mobile web: keep the video viewer on the opened video.
-x.com##[data-testid="vss-scroll-view"]:style(overflow: clip !important; scroll-snap-type: none !important; overscroll-behavior: none !important; touch-action: pinch-zoom !important;)

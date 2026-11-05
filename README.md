@@ -7,8 +7,7 @@ Custom cosmetic filters for YouTube, Instagram, and X in Brave. Each list has a 
 | Mobile YouTube | `m.youtube.com` | [Mobile filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/duration-filter-grey.txt) |
 | Desktop YouTube | `www.youtube.com` | [Desktop filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/duration-filter-desktop-grey.txt) |
 | Mobile Instagram | `www.instagram.com` | [Instagram filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/instagram-for-you-grey.txt) |
-
-Local X filters: [video viewer](x-video-no-scroll.txt) and [For you](x-for-you-grey.txt). These lists have not been published as subscriptions. Paste either file's contents into **Create custom filters**, save, and reload X. They can be used separately or together.
+| Mobile X | `x.com` | [X filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/x-filters.txt) |
 
 ## Install
 
@@ -38,9 +37,9 @@ These rules depend on Instagram's mobile markup and may need updates when it cha
 
 ## X behavior
 
-On the mobile website, `x-video-no-scroll.txt` disables scrolling in the full-screen video viewer. The opened video remains playable and the Close button remains available. Normal feed scrolling is outside this rule's scope.
+On the mobile website, `x-filters.txt` disables scrolling in the full-screen video viewer. The opened video remains playable and the Close button remains available. Normal feed scrolling is outside this rule's scope.
 
-`x-for-you-grey.txt` replaces the home **For you** feed with a solid grey box while preserving the feed selector and bottom navigation. **Following** remains unmasked. The selector relies on For you being the first home tab and on the English `Home timeline` label.
+The same list replaces the home **For you** feed with a solid grey box while preserving the feed selector and bottom navigation. **Following** remains unmasked. The selector relies on For you being the first home tab and on the English `Home timeline` label.
 
 Verified in Brave Android 1.97.59 on 2026-11-05 using both rules saved in Brave's custom-filter editor, followed by a page reload. Checked the grey feed, switching to Following, normal Following feed scrolling, opening a video from a post, video playback, upward and downward touch scroll gestures, and attempted programmatic scrolling. The video viewer stayed at scroll position zero; playback reached the end without advancing to another video.
 
