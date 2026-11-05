@@ -7,7 +7,7 @@ Custom cosmetic filters for YouTube, Instagram, and X in Brave. Each list has a 
 | Mobile YouTube | `m.youtube.com` | [Mobile filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/duration-filter-grey.txt) |
 | Desktop YouTube | `www.youtube.com` | [Desktop filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/duration-filter-desktop-grey.txt) |
 | Mobile Instagram | `www.instagram.com` | [Instagram filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/instagram-for-you-grey.txt) |
-| Mobile X | `x.com` | [X filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/x-filters.txt) |
+| Mobile X | `x.com` | [X filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/x-filters.txt?v=2) |
 
 ## Install
 
@@ -15,7 +15,9 @@ Custom cosmetic filters for YouTube, Instagram, and X in Brave. Each list has a 
 2. Under **Add custom filter lists**, paste the appropriate raw subscription URL from the table and add it.
 3. Remove older manually pasted versions of the rules for the selected site, then reload that site.
 
-After a repository update, use **Update now** in Brave's filter-list settings and reload the site to fetch the latest version without waiting for a background update.
+On desktop, use **Update now** in Brave's filter-list settings and reload the site after a repository update.
+
+In Brave Android 1.97.59, the **UPDATE** button updates built-in lists rather than forcing custom subscriptions to refresh. To force a custom-list refresh, tap the pencil icon in **Content filtering**, delete the old subscription with its trash icon, then add the subscription URL again. For the X profile fix, use the `?v=2` URL in the table to request a fresh subscription, then open X in a new tab. Remove the previous X subscription first; keeping the old list enabled can retain its old rules.
 
 ## YouTube behavior
 
