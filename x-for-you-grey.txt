@@ -1,0 +1,4 @@
+! X mobile web: grey the home feed while its first (For you) tab is selected.
+! Keep the feed selector and bottom navigation available.
+x.com##body:has([role="tablist"] > [role="presentation"]:first-child > [role="tab"][aria-selected="true"]) [data-testid="primaryColumn"] > [aria-label="Home timeline"]:style(background: #bdbdbd !important; min-height: 100dvh !important; overflow: hidden !important; touch-action: none !important;)
+x.com##body:has([role="tablist"] > [role="presentation"]:first-child > [role="tab"][aria-selected="true"]) [data-testid="primaryColumn"] > [aria-label="Home timeline"] > *:style(display: none !important;)
