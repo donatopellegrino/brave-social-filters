@@ -39,8 +39,10 @@ These rules depend on Instagram's mobile markup and may need updates when it cha
 
 On the mobile website, `x-filters.txt` disables scrolling in the full-screen video viewer. The opened video remains playable and the Close button remains available. Normal feed scrolling is outside this rule's scope.
 
-The same list replaces the home **For you** feed with a solid grey box while preserving the feed selector and bottom navigation. **Following** remains unmasked. The selector relies on For you being the first home tab and on the English `Home timeline` label.
+The same list replaces the home **For you** feed with a solid grey box while preserving the feed selector and bottom navigation. **Following** remains unmasked. Both grey rules require the exact canonical URL `https://x.com/home`, so profiles and other pages that reuse the same timeline markup stay visible. The selector also relies on For you being the first home tab and on the English `Home timeline` label.
 
 Verified in Brave Android 1.97.59 on 2026-11-05 using both rules saved in Brave's custom-filter editor, followed by a page reload. Checked the grey feed, switching to Following, normal Following feed scrolling, opening a video from a post, video playback, upward and downward touch scroll gestures, and attempted programmatic scrolling. The video viewer stayed at scroll position zero; playback reached the end without advancing to another video.
+
+After correcting the home-page scope, reproduced the original profile masking and verified the saved fix on two profiles, profile Posts/Replies/Media tabs, Explore, search results, and post details. Checked Home-to-profile Back/Forward navigation, Following scrolling, and reloaded For you. Those pages stayed visible; the grey mask applied only to Home with For you selected. Rechecked video playback, the swipe lock, and Close.
 
 These rules depend on X's mobile markup and may need updates when it changes. They do not prevent hidden feed or recommended-video data from downloading and do not block account interactions. Desktop X is outside the tested scope.
