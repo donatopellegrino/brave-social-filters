@@ -1,6 +1,8 @@
 ! X mobile web: keep the video viewer on the opened video.
 x.com##[data-testid="vss-scroll-view"]:style(overflow: clip !important; scroll-snap-type: none !important; overscroll-behavior: none !important; touch-action: pinch-zoom !important;)
-! X mobile web: grey the home feed while its first (For you) tab is selected.
+! X mobile web: grey only /home while its first (For you) tab is selected.
+! X reuses the Home timeline label and first-selected-tab pattern on profiles.
+! Require the exact home canonical URL; its changes also remove the mask on SPA navigation.
 ! Keep the feed selector and bottom navigation available.
-x.com##body:has([role="tablist"] > [role="presentation"]:first-child > [role="tab"][aria-selected="true"]) [data-testid="primaryColumn"] > [aria-label="Home timeline"]:style(background: #bdbdbd !important; min-height: 100dvh !important; overflow: hidden !important; touch-action: none !important;)
-x.com##body:has([role="tablist"] > [role="presentation"]:first-child > [role="tab"][aria-selected="true"]) [data-testid="primaryColumn"] > [aria-label="Home timeline"] > *:style(display: none !important;)
+x.com##html:has(> head > link[rel="canonical"][href="https://x.com/home"]) body:has([role="tablist"] > [role="presentation"]:first-child > [role="tab"][aria-selected="true"]) [data-testid="primaryColumn"] > [aria-label="Home timeline"]:style(background: #bdbdbd !important; min-height: 100dvh !important; overflow: hidden !important; touch-action: none !important;)
+x.com##html:has(> head > link[rel="canonical"][href="https://x.com/home"]) body:has([role="tablist"] > [role="presentation"]:first-child > [role="tab"][aria-selected="true"]) [data-testid="primaryColumn"] > [aria-label="Home timeline"] > *:style(display: none !important;)
