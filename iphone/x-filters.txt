@@ -7,3 +7,5 @@ x.com##html:style(& [data-testid="vss-scroll-view"] {overflow: clip !important; 
 ! Keep the feed selector and bottom navigation available.
 x.com##html:style(&:has(> head > link[rel="canonical"][href="https://x.com/home"]) body:has([role="tablist"] > [role="presentation"]:first-child > [role="tab"][aria-selected="true"]) [data-testid="primaryColumn"] > [aria-label="Home timeline"] {background: #bdbdbd !important; min-height: 100dvh !important; overflow: hidden !important; touch-action: none !important;})
 x.com##html:style(&:has(> head > link[rel="canonical"][href="https://x.com/home"]) body:has([role="tablist"] > [role="presentation"]:first-child > [role="tab"][aria-selected="true"]) [data-testid="primaryColumn"] > [aria-label="Home timeline"] > * {display: none !important;})
+! Hide the floating new-posts badge while Home For you is masked.
+x.com##html:style(&:has(> head > link[rel="canonical"][href="https://x.com/home"]) body:has([role="tablist"] > [role="presentation"]:first-child > [role="tab"][aria-selected="true"]) [role="status"]:has([data-testid="pillLabel"]) {display: none !important;})
