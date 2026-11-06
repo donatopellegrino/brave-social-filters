@@ -3,7 +3,7 @@
 | Website | Subscription URL |
 | --- | --- |
 | YouTube | [YouTube filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/android/youtube-filter.txt) |
-| Instagram | [Instagram filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/android/Instagram-filter.txt) |
+| Instagram | [Instagram filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/android/instagram-filter.txt) |
 | X | [X filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/android/x-filter.txt) |
 
 1. Copy a subscription URL from the table.
