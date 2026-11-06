@@ -1,15 +1,17 @@
-# YouTube, Instagram, and X filters for Brave
+# Brave social filters
 
-Custom cosmetic filters for YouTube, Instagram, and X in Brave. Each list has a separate scope.
+Custom cosmetic filters for YouTube, Instagram, and X in Brave. Each list has a separate scope. The existing mobile lists target Android; iPhone variants are in [`iphone/`](iphone/README.md).
 
 | Version | Website | Filter subscription URL |
 | --- | --- | --- |
-| Mobile YouTube | `m.youtube.com` | [Mobile filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/duration-filter-grey.txt) |
+| Android YouTube | `m.youtube.com` | [Mobile filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/duration-filter-grey.txt) |
 | Desktop YouTube | `www.youtube.com` | [Desktop filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/duration-filter-desktop-grey.txt) |
-| Mobile Instagram | `www.instagram.com` | [Instagram filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/instagram-for-you-grey.txt) |
-| Mobile X | `x.com` | [X filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/x-filters.txt?v=2) |
+| Android Instagram | `www.instagram.com` | [Instagram filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/instagram-for-you-grey.txt) |
+| Android X | `x.com` | [X filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/x-filters.txt?v=2) |
 
 ## Install
+
+For iPhone setup and validation limits, see [`iphone/README.md`](iphone/README.md). Use one platform variant per site; keeping an Android list enabled alongside its iPhone replacement can preserve incorrect styles.
 
 1. Open `brave://settings/shields/filters` in Brave. On Android, you can also open Settings → Brave Shields & privacy → Content filtering.
 2. Under **Add custom filter lists**, paste the appropriate raw subscription URL from the table and add it.
