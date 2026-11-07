@@ -2,9 +2,9 @@
 
 | Website | Subscription URL |
 | --- | --- |
-| YouTube | [YouTube filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/android/youtube-filter.txt) |
-| Instagram | [Instagram filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/android/instagram-filter.txt) |
-| X | [X filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/android/x-filter.txt) |
+| YouTube | [YouTube filter](https://raw.githubusercontent.com/donatopellegrino/brave-social-filters/main/android/youtube-filter.txt) |
+| Instagram | [Instagram filter](https://raw.githubusercontent.com/donatopellegrino/brave-social-filters/main/android/instagram-filter.txt) |
+| X | [X filter](https://raw.githubusercontent.com/donatopellegrino/brave-social-filters/main/android/x-filter.txt) |
 
 1. Copy a subscription URL from the table.
 2. In Brave, open **Settings → Brave Shields & privacy → Content filtering** and add it under **Add custom filter lists**.

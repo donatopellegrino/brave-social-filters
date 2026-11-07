@@ -6,7 +6,7 @@ Filters for YouTube, Instagram, and X in Brave.
 | --- | --- |
 | Android | [Android filters](android/README.md) |
 | iPhone | [iPhone filters](iphone/README.md) |
-| Desktop | [YouTube filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/youtube-filter-desktop.txt) |
+| Desktop | [YouTube filter](https://raw.githubusercontent.com/donatopellegrino/brave-social-filters/main/youtube-filter-desktop.txt) |
 
 On desktop, open `brave://settings/shields/filters` and add the YouTube filter URL under **Add custom filter lists**. Remove older pasted rules for the same site and reload it.
 
