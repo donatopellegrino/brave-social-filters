@@ -1,4 +1,3 @@
-! Match displayed durations rather than translated accessibility labels.
 m.youtube.com##badge-shape:has-text(/^\s*(?:[0-9]|1[0-4]):[0-5][0-9]\s*$/):upward(yt-lockup-view-model):style(&:is(ytm-browse .tab-content[tab-identifier="FEwhat_to_watch"] yt-lockup-view-model){pointer-events:none!important;user-select:none!important;& *{pointer-events:none!important;user-select:none!important;}})
 m.youtube.com##badge-shape:has-text(/^\s*(?:[0-9]|1[0-4]):[0-5][0-9]\s*$/):upward(yt-lockup-view-model):style(&:is(ytm-browse .tab-content[tab-identifier="FEwhat_to_watch"] yt-lockup-view-model){& a.ytLockupViewModelContentImage yt-thumbnail-view-model{background-color:#777!important}})
 m.youtube.com##badge-shape:has-text(/^\s*(?:[0-9]|1[0-4]):[0-5][0-9]\s*$/):upward(yt-lockup-view-model):style(&:is(ytm-browse .tab-content[tab-identifier="FEwhat_to_watch"] yt-lockup-view-model){& a.ytLockupViewModelContentImage img.ytCoreImageHost{visibility:hidden!important}})

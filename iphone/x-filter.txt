@@ -1,11 +1,4 @@
-! iPhone: native CSS nesting keeps scopes live and supports pseudo-elements in Brave iOS.
-! X mobile web: keep the video viewer on the opened video.
 x.com##html:style(& [data-testid="vss-scroll-view"] {overflow: clip !important; scroll-snap-type: none !important; overscroll-behavior: none !important; touch-action: pinch-zoom !important;})
-! X mobile web: grey only /home while its first (For you) tab is selected.
-! X reuses timeline containers and the first-selected-tab pattern on profiles.
-! Require the exact home canonical URL; its changes also remove the mask on SPA navigation.
-! Keep the feed selector and bottom navigation available.
 x.com##html:style(&:has(> head > link[rel="canonical"][href="https://x.com/home"]) body:has([role="tablist"] > [role="presentation"]:first-child > [role="tab"][aria-selected="true"]) [data-testid="primaryColumn"] > [aria-label] {background: #bdbdbd !important; min-height: 100dvh !important; overflow: hidden !important; touch-action: none !important;})
 x.com##html:style(&:has(> head > link[rel="canonical"][href="https://x.com/home"]) body:has([role="tablist"] > [role="presentation"]:first-child > [role="tab"][aria-selected="true"]) [data-testid="primaryColumn"] > [aria-label] > * {display: none !important;})
-! Hide the floating new-posts badge while Home For you is masked.
 x.com##html:style(&:has(> head > link[rel="canonical"][href="https://x.com/home"]) body:has([role="tablist"] > [role="presentation"]:first-child > [role="tab"][aria-selected="true"]) [role="status"]:has([data-testid="pillLabel"]) {display: none !important;})

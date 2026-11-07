@@ -1,9 +1,4 @@
-! Use native CSS nesting so feed styles stop matching after SPA navigation on Brave iOS.
-! Instagram mobile web: grey out the For You home feed and the central Reels discovery tab.
-! Matches the mobile home header's feed-selection menu; Following/Favorites have a Back header.
 www.instagram.com##html:style(& section:has(> nav header h1 [aria-haspopup="menu"]) > main {position: fixed !important; inset: 0 !important; margin: 0 !important; padding: 0 !important; min-height: 0 !important; background: #bdbdbd !important; overflow: hidden !important; z-index: 0 !important; touch-action: none !important;})
 www.instagram.com##html:style(& section:has(> nav header h1 [aria-haspopup="menu"]) > main > * {display: none !important;})
-! Reels discovery tab: hide its virtualized video feed, preserving the sibling top selector and bottom navigation.
-! A reel opened from a user's profile has a separate detail view and does not match this selector.
 www.instagram.com##html:style(& main > div:has(> div > [aria-haspopup="menu"]) > div:has(> div > [data-virtualized]) {background: #bdbdbd !important; overflow: hidden !important; touch-action: none !important;})
 www.instagram.com##html:style(& main > div:has(> div > [aria-haspopup="menu"]) > div:has(> div > [data-virtualized]) > * {display: none !important;})

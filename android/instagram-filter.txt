@@ -1,8 +1,4 @@
-! Instagram mobile web: grey out the For You home feed and the central Reels discovery tab.
-! Matches the mobile home header's feed-selection menu; Following/Favorites have a Back header.
 www.instagram.com##section:has(> nav header h1 [aria-haspopup="menu"]) > main:style(position: fixed !important; inset: 0 !important; margin: 0 !important; padding: 0 !important; min-height: 0 !important; background: #bdbdbd !important; overflow: hidden !important; z-index: 0 !important; touch-action: none !important;)
 www.instagram.com##section:has(> nav header h1 [aria-haspopup="menu"]) > main > *:style(display: none !important;)
-! Reels discovery tab: hide its virtualized video feed, preserving the sibling top selector and bottom navigation.
-! A reel opened from a user's profile has a separate detail view and does not match this selector.
 www.instagram.com##main > div:has(> div > [aria-haspopup="menu"]) > div:has(> div > [data-virtualized]):style(background: #bdbdbd !important; overflow: hidden !important; touch-action: none !important;)
 www.instagram.com##main > div:has(> div > [aria-haspopup="menu"]) > div:has(> div > [data-virtualized]) > *:style(display: none !important;)
