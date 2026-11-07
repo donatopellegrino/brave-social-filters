@@ -8,7 +8,9 @@ Filters for YouTube, Instagram, and X in Brave.
 | iPhone | [iPhone filters](iphone/README.md) |
 | Desktop | [YouTube filter](https://raw.githubusercontent.com/donatopellegrino/youtube-filters/main/youtube-filter-desktop.txt) |
 
-On desktop, open `brave://settings/shields/filters` and add the YouTube filter URL under **Add custom filter lists**. Remove older pasted rules for the same site and reload it. To refresh the list later, select **Update now** and reload YouTube.
+On desktop, open `brave://settings/shields/filters` and add the YouTube filter URL under **Add custom filter lists**. Remove older pasted rules for the same site and reload it.
+
+If Brave keeps an old version, remove the subscription and add its URL with `?v=2` at the end, then reload the site. Use a new number for each later refresh.
 
 ## What the filters do
 
