@@ -16,4 +16,4 @@ On desktop, open `brave://settings/shields/filters` and add the YouTube filter U
 - **Instagram:** The mobile Home **For you** feed and central **Reels** feed become grey and cannot be tapped or swiped through. Home **Following**, **Favorites**, **Explore**, profiles, and reels opened from a profile stay available.
 - **X:** The mobile Home **For you** feed becomes grey. **Following**, profiles, search, and posts stay available. In the full-screen video viewer, the opened video plays, but scrolling to other videos is blocked. The Close button stays available.
 
-Use only the list for your platform for each site. These filters target the websites, not the Instagram, YouTube, or X apps. They rely on English labels and site layouts, so website changes can break them. Hidden content might still download.
+Use only the list for your platform for each site. These filters target the websites, not the Instagram, YouTube, or X apps. They rely on site layouts, so website changes can break them. Hidden content might still download.
