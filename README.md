@@ -2,6 +2,8 @@
 
 Filters for YouTube, Instagram, and X in Brave.
 
+Supports English, German, Italian, Spanish, and French interfaces.
+
 | Platform | Setup |
 | --- | --- |
 | Android | [Android filters](android/README.md) |
